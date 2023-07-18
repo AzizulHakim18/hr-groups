@@ -52,7 +52,6 @@ h2 {
 
 p {
     color: #727272;
-    text-align: center;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
@@ -71,7 +70,7 @@ p {
     margin: 5px;
 }
 
-.contianer {
+.container {
     width: 75%;
     margin: auto;
     padding: 30px 0px;
@@ -91,11 +90,24 @@ p {
     padding: 5px;
 }
 
+/* quuick list features */
+.quick-list-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 40px 5px;
+}
 
+.quick-list-container-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
 
-
-
-
+.quick-list-container-description {
+    margin: 0px 20px;
+    padding-left: 20px;
+}
 
 
 
@@ -122,9 +134,27 @@ p {
         height: 250px;
     }
 
-    .contianer {
+    .container {
         width: 80%;
+    }
+
+    .quick-list-container {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 20px 5px;
+    }
+
+    .quick-list-container-img {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
     }
 }
 
-@media screen and (min-width:576px)and (max-width:992px) {}
+@media screen and (min-width:576px)and (max-width:992px) {
+    .quick-list-container {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 20px 5px;
+    }
+}
