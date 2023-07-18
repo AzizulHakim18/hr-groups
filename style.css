@@ -94,6 +94,48 @@ p {
     padding: 5px;
 }
 
+/* features section */
+
+.features-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.features-title {
+    border-left: 5px solid #FF900E;
+}
+
+.features-img {
+    height: 700px;
+}
+
+.feature-btn {
+    border: 0;
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 10px;
+    position: relative;
+    bottom: 100px;
+    left: -100px;
+}
+
+.feature-year {
+    color: #FFF;
+    text-align: center;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.feature-exp {
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
 /* quuick list features */
 .quick-list-container {
     display: flex;
@@ -206,6 +248,19 @@ footer {
         grid-template-columns: repeat(1, 1fr);
         gap: 15x;
     }
+
+    .features-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .feature-btn {
+        padding: 10px;
+        position: relative;
+        bottom: 100px;
+        left: 50px;
+    }
+
 }
 
 @media screen and (min-width:576px)and (max-width:992px) {
@@ -224,5 +279,17 @@ footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 15x;
+    }
+
+    .features-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .feature-btn {
+        padding: 10px;
+        position: relative;
+        bottom: 100px;
+        left: 50px;
     }
 }
