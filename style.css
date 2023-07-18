@@ -11,6 +11,10 @@ header {
     background-color: rgba(255, 144, 14, 0.10);
 }
 
+section {
+    margin: 20px 0px;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -129,9 +133,25 @@ p {
     align-items: center;
 }
 
+/* sponsors adde */
+.sponsors-description {
+    text-align: center;
+}
 
+.sponsors {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5x;
+    width: 85%;
+    margin: 20px auto;
+}
 
-
+footer {
+    width: 75%;
+    background-color: rgba(255, 144, 14, 0.10);
+    text-align: center;
+    margin: 20px auto;
+}
 
 
 
@@ -180,6 +200,12 @@ p {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .sponsors {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15x;
+    }
 }
 
 @media screen and (min-width:576px)and (max-width:992px) {
@@ -192,5 +218,11 @@ p {
     .facts-boxes {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sponsors {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15x;
     }
 }
